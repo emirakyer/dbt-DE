@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: project
+    database: astral-bit-411318
+    schema: prefectproject
+    tables:
+      - name: spotify2023
+      - name: yellow_tripdata
+        loaded_at_field: tpep_pickup_datetime
+        freshness: 
+          warn_after:
+            count: 12
+            period: hour
+          error_after:
+            count: 24
+            period: hour
+      

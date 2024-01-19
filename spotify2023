@@ -1,0 +1,1 @@
+SELECT * FROM {{source('astral-bit-411318','spotify2023')}} LIMIT 10

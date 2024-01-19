@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: staging
+    database: dtc-de-407116
+    schema: dbt_lrn
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+
+name: my_project
+config:
+  project: my_project
+  location: europe

@@ -1,0 +1,20 @@
+version: 2 
+
+models:
+  - name: greentripexe.sql
+    columns:
+      - name: vendorid
+        tests:
+          - unique
+          - not_null
+      - name: congestion_surcharge
+        tests:
+          - accepted_values:
+              values:
+                - null
+
+      - name: int64_field_0
+        tests:
+          - unique
+          - not_null
+          
