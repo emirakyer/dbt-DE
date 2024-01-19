@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: project
+  - name: projectspotify
     database: astral-bit-411318
     schema: prefectproject
     tables:
